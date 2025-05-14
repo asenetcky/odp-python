@@ -1,0 +1,10 @@
+[project]
+name = "odp-python"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "polars>=1.29.0",
+    "sodapy>=2.2.0",
+]
