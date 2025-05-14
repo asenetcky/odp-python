@@ -10,21 +10,26 @@
     "vscode": {
       "extensions": [
         "ms-python.python",
-        "charliermarsh.ruff"
+        "charliermarsh.ruff",
+        "ms-toolsai.jupyter"
       ],
       "settings": {
-        "python.defaultInterpreterPath": "/usr/local/bin/python",
-        "python.editor.formatOnSave": true,
-        "python.editor.defaultFormatter": "charliermarsh.ruff",
-        "python.formatting.provider": "ruff",
-        "python.linting.ruffEnabled": true,
-        "python.linting.enabled": true,
-        "python.linting.flake8Enabled": false,
-        "python.testing.pytestEnabled": true,
+        "python": {
+          "defaultInterpreterPath": "/usr/local/bin/python",
+          "editor.formatOnSave": true,
+          "editor.defaultFormatter": "charliermarsh.ruff",
+          "formatting.provider": "ruff",
+          "linting.ruffEnabled": true,
+          "linting.enabled": true,
+          "linting.flake8Enabled": false,
+          "testing.pytestEnabled": true
+        },
         "editor.lineNumbers": "relative"
       }
     }
   },
   "postCreateCommand": "uv init",
+  "postStartCommand": "uv sync",
   "remoteUser": "vscode"
 }
+
