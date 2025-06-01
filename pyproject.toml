@@ -8,3 +8,8 @@ dependencies = [
     "polars>=1.29.0",
     "sodapy>=2.2.0",
 ]
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.2.0",
+]
